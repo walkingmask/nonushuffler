@@ -1,0 +1,5 @@
+https://takuyaa.github.io/kuromoji.js/demo/tokenize.html
+
+references
+https://github.com/takuyaa/kuromoji.js
+http://stp-the-wld.blogspot.com/2015/01/javascriptkuromojijs.html
