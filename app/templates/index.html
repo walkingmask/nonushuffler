@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nonu Shuffler</title>
+  <meta name="description" content="名詞入れ替えツール。">
+  <link rel="icon" href="/static/img/favicon.ico">
+  <link rel="stylesheet" href="/static/css/reboot.css"/>
+  <link rel="stylesheet" href="/static/css/skyblue.min.css"/>
+  <link rel="stylesheet" href="/static/css/app.css"/>
+  <script src="/static/js/kuromoji.js"></script>
+</head>
+
+<body>
+  <div id="header" class="bg-app padding-y-20 margin-bottom-20">
+    <div class="container text-center">
+      <h1 id="title">名詞シャッフラー</h1>
+      <div>
+        By <a href="https://twitter.com/walkingmask" target="_blank">@walkingmask</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="loadingMessageArea">
+      <div class="row text-center">
+        <div class="col md-12">
+          <h2 id="loadingMessage">Loading...</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="inputArea" style="display:none;">
+      <div class="row text-center">
+        <div class="col md-12">
+          <textarea id="inputText" class="form-control" placeholder="変換したい文章を入力してください"></textarea>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col md-12">
+          <input id="stopWords" class="form-control" type="text" placeholder="除外,名詞,入力">
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col md-12">
+          <button id="tokenizeButton" class="btn btn-warning">変換</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="outputArea" style="display:none;">
+      <div class="row text-center">
+        <div class="col md-12">
+          <textarea id="outputText" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col md-12">
+          <button id="copyButton" class="btn btn-warning">コピー</button>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col md-12">
+          <button id="backButton" class="btn btn-light">戻る</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+
+</html>

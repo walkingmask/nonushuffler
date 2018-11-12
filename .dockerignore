@@ -1,0 +1,5 @@
+changelog/
+.git/
+.gitignore
+.python-version
+README.md

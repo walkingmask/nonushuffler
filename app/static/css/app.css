@@ -1,0 +1,10 @@
+textarea {
+    resize: vertical;
+}
+.bg-app {
+    background-color: #a7d534;
+    color: #f5fad2;
+}
+#inputText {
+    height: auto;
+}
