@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
 
+version = '1.0.0'
 app = Flask(__name__)
 
 
@@ -10,7 +11,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.config['TEMPLATES_AUTO_RELOAD'] = True      
-    app.jinja_env.auto_reload = True
-    app.debug = True
+    app.debug = False
     app.run(host='0.0.0.0', port=80)

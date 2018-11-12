@@ -1,7 +1,7 @@
 FROM python:3.6-alpine
 
 LABEL maintainer="walkingmask <walkingmask.jp@gmail.com>"
-LABEL description="local environment for development"
+LABEL description="Dockerfile for nonushuffler"
 
 ADD app /app
 WORKDIR /app
