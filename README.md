@@ -16,34 +16,3 @@ Inspired by https://moto-neta.com/net/y-shirt-no-shitakara/
 9位・職場では下着に夢中になっている
 10位・ゴキブリで顔を拭く
 ```
-
-
-## Requirements
-
-* nginx-proxy
-* Visual Studio Code
-
-
-## Depoly
-
-Init.
-
-```
-git clone https://github.com/walkingmask/nonushuffler.walkingmask.tk.git
-cd nonushuffler.walkingmask.tk
-docker-compose up -d
-```
-
-Update.
-
-```
-cd nonushuffler.walkingmask.tk
-git pull
-docker-compose build
-docker-compose restart
-```
-
-
-## Develop
-
-Use VS Code devcontainer.
