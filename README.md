@@ -16,3 +16,31 @@ Inspired by https://moto-neta.com/net/y-shirt-no-shitakara/
 9位・職場では下着に夢中になっている
 10位・ゴキブリで顔を拭く
 ```
+
+
+## Requirements
+
+* Git
+* Node.js
+* pnpm
+* GitHub Repository
+* Cloudflare Account
+
+
+## Development
+
+```bash
+pnpm add -D wrangler
+pnpm approve-builds
+pnpm install
+pnpm wrangler --version
+pnpm wrangler login
+pnpm wrangler pages dev .  # http://localhost:8788
+```
+
+
+## Depoly
+
+```bash
+pnpm wrangler deploy
+```
